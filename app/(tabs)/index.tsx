@@ -21,7 +21,7 @@ const HomeScreen = () => {
   ]);
 
  
-  
+  // state
   const changeText = (typeData: string) => (valueData: string) => {
     const _taskData: any = { ...taskData };
     _taskData[typeData] = valueData;
@@ -36,6 +36,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
+    {/* form */}
       <View style={styles.form}>
         <TextInput
           placeholder="Enter title"
@@ -63,7 +64,7 @@ const HomeScreen = () => {
           </View>
         </TouchableOpacity>
       </View>
-
+      {/* list */}
       <View style={styles.list}>
         {tasks.map((item: any, index: number) => (
           <View key={index} style={styles.item}>
@@ -83,6 +84,8 @@ const HomeScreen = () => {
   );
 };
 
+
+// styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
