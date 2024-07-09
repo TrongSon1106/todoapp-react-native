@@ -22,6 +22,7 @@ const HomeScreen = () => {
 
  
   // state
+  // this line is for double-check
   const changeText = (typeData: string) => (valueData: string) => {
     const _taskData: any = { ...taskData };
     _taskData[typeData] = valueData;
@@ -34,6 +35,7 @@ const HomeScreen = () => {
     setTasks(_tasks);
   };
 
+  //return function
   return (
     <View style={styles.container}>
     {/* form */}
