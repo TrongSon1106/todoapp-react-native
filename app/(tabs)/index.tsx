@@ -21,7 +21,7 @@ const HomeScreen = () => {
   ]);
 
  
-  // state
+  // this comment is for checking conflict
   // function change text
   const changeText = (typeData: string) => (valueData: string) => {
     const _taskData: any = { ...taskData };
