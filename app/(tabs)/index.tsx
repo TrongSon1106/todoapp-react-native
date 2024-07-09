@@ -22,13 +22,14 @@ const HomeScreen = () => {
 
  
   // state
-  // this line is for double-check
+  // function change text
   const changeText = (typeData: string) => (valueData: string) => {
     const _taskData: any = { ...taskData };
     _taskData[typeData] = valueData;
     setTaskData(_taskData);
   };
 
+  // fuction add task
   const addTask = () => {
     const _tasks = [...tasks];
     _tasks.push(taskData);
